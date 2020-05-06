@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">UICode</string>
+
+
+    <string-array name="yesOrNo" >
+        <item>是</item>
+        <item>否</item>
+    </string-array>
+    <string-array name="checkMore" >
+        <item>听课</item>
+        <item>看书</item>
+        <item>背书</item>
+    </string-array>
+</resources>

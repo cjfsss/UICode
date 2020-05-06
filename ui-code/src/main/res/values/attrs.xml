@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="colorButtonRipple" format="reference"/>
+    <!-- 按钮按压时的颜色 -->
+    <attr name="colorButtonPressed" format="reference"/>
+    <!-- 按钮禁用时的颜色 -->
+    <attr name="colorButtonDisable" format="reference"/>
+    <!-- 分割线的颜色 -->
+    <attr name="colorLine" format="reference"/>
+
+    <!-- 对话框确认按钮文本颜色 -->
+    <attr name="colorConfirm" format="reference"/>
+    <!-- 对话框取消按钮文本颜色 -->
+    <attr name="colorCancel" format="reference"/>
+
+    <!-- 左边 -->
+    <attr name="item_leftText" format="string" />
+    <attr name="item_leftIcon" format="reference" />
+    <attr name="item_leftIconColor" format="color" />
+    <attr name="item_leftHint" format="string" />
+    <attr name="item_leftColor" format="color" />
+    <attr name="item_leftSize" format="dimension" />
+    <attr name="item_inputText" format="string" />
+    <attr name="item_inputHint" format="string" />
+    <attr name="item_inputIcon" format="reference" />
+    <!-- 中间 -->
+    <attr name="item_centerText" format="string" />
+    <attr name="item_centerColor" format="color" />
+    <attr name="item_centerSize" format="dimension" />
+    <!-- 右边 -->
+    <attr name="item_inputColor" format="color" />
+    <attr name="item_inputSize" format="dimension" />
+    <attr name="item_inputMinWidth" format="dimension" />
+    <attr name="item_inputMaxWidth" format="dimension" />
+    <attr name="item_inputMinLines" format="integer" />
+    <attr name="item_inputSingleLine" format="boolean" />
+    <attr name="item_inputBackground" format="reference" />
+    <attr name="item_inputLocation" format="integer">
+        <flag name="right" value="1" />
+        <flag name="bottom" value="2" />
+    </attr>
+    <attr name="item_mustVisibility" format="boolean" />
+    <attr name="item_mustText" format="string" />
+
+    <attr name="item_mustColor" format="color" />
+    <!-- 必填点 -->
+    <attr name="item_mustSize" format="dimension" />
+    <attr name="item_lineVisible" format="boolean" />
+    <attr name="item_lineColor" format="reference|color" />
+    <attr name="item_lineSize" format="dimension" />
+    <!-- 分割线 -->
+    <attr name="item_lineMargin" format="dimension" />
+    <attr name="item_rightImage" format="reference" />
+    <attr name="item_rightChecked" format="boolean" />
+    <attr name="item_rightClickable" format="boolean" />
+
+    <attr name="item_checked" format="boolean" />
+    <attr name="item_clickable" format="boolean" />
+    <attr name="item_trackTint" format="color" />
+    <attr name="item_thumbTint" format="color" />
+    <attr name="item_buttonTint" format="color" />
+
+
+    <attr name="item_leftSubtitleText" format="string" />
+    <attr name="item_leftSubtitleColor" format="color" />
+    <attr name="item_leftSubtitleSize" format="dimension" />
+
+    <attr name="item_rightType" format="integer">
+        <flag name="SwitchMaterial" value="1" />
+        <flag name="CheckBox" value="2" />
+        <flag name="ImageView" value="3" />
+        <flag name="none" value="4" />
+    </attr>
+    <attr name="item_leftType" format="integer">
+        <flag name="subtitle1" value="1" />
+        <flag name="subtitle2" value="2" />
+    </attr>
+    <attr name="item_rightText" format="string" />
+    <attr name="item_rightHint" format="string" />
+    <attr name="item_rightIcon" format="reference" />
+    <attr name="item_rightIconColor" format="color" />
+
+    <attr name="item_rightColor" format="color" />
+    <attr name="item_rightSize" format="dimension" />
+
+    <attr name="item_chipCheckText" format="string" />
+
+    <attr name="item_chipClickable" format="boolean" />
+    <attr name="item_chipAllText" format="reference" />
+    <attr name="item_chipType" format="integer">
+        <flag name="single" value="1" />
+        <flag name="more" value="2" />
+    </attr>
+
+    <attr name="BounceOrientation" format="enum">
+        <enum name="horizontal" value="0" />
+        <enum name="vertical" value="1" />
+    </attr>
+    <attr name="BounceResistance" format="float" />
+
+    <attr name="BounceDuration" format="integer" />
+
+<!--    <attr name="scaleRatio" format="float" />-->
+
+    <attr name="inputRegex" format="string" />
+
+    <attr name="regexType">
+        <!-- 手机号（只能以 1 开头） -->
+        <enum name="mobile" value="0x01" />
+        <!-- 中文（普通的中文字符） -->
+        <enum name="chinese" value="0x02" />
+        <!-- 英文（大写和小写的英文） -->
+        <enum name="english" value="0x03" />
+        <!-- 整数（非 0 开头的数字） -->
+        <enum name="count" value="0x04" />
+        <!-- 用户名（中文、英文、数字） -->
+        <enum name="name" value="0x05" />
+        <!-- 非空格字符 -->
+        <enum name="nonnull" value="0x06" />
+    </attr>
+
+    <declare-styleable name="LeftTitleAction">
+        <!-- 左边 -->
+        <attr name="item_leftText" />
+        <attr name="item_leftHint" />
+        <attr name="item_leftIcon" />
+        <attr name="item_leftIconColor" />
+        <attr name="item_leftColor" />
+        <attr name="item_leftSize" />
+    </declare-styleable>
+
+    <declare-styleable name="CenterTitleAction">
+        <!-- 左边 -->
+        <attr name="item_centerText" />
+        <attr name="item_centerColor" />
+        <attr name="item_centerSize" />
+    </declare-styleable>
+
+    <declare-styleable name="MustFullAction">
+        <!-- 左边 -->
+        <attr name="item_mustVisibility" />
+        <attr name="item_mustText" />
+        <attr name="item_mustColor" />
+        <attr name="item_mustSize" />
+    </declare-styleable>
+
+    <!--    回弹方向-->
+    <declare-styleable name="DividerLineAction">
+        <!-- 分割线 -->
+        <attr name="item_lineVisible" />
+        <attr name="item_lineColor" />
+        <attr name="item_lineSize" />
+        <attr name="item_lineMargin" />
+    </declare-styleable>
+    <!--    阻力系数-->
+    <declare-styleable name="RightTextAction">
+        <attr name="item_rightText" />
+        <attr name="item_rightHint" />
+        <attr name="item_rightIcon" />
+        <attr name="item_rightIconColor" />
+        <attr name="item_rightColor" />
+        <attr name="item_rightSize" />
+    </declare-styleable>
+    <!--    回弹时间-->
+    <declare-styleable name="LeftSubtitleAction">
+        <!-- 左边 -->
+        <attr name="item_leftSubtitleText" />
+        <attr name="item_leftSubtitleColor" />
+        <attr name="item_leftSubtitleSize" />
+    </declare-styleable>
+
+    <declare-styleable name="CompoundAction">
+        <attr name="item_checked" />
+        <attr name="item_clickable" />
+        <attr name="item_trackTint" />
+        <attr name="item_thumbTint" />
+        <attr name="item_buttonTint" />
+        <attr name="useMaterialThemeColors" />
+    </declare-styleable>
+
+    <declare-styleable name="ChipAction">
+        <!-- 右边 -->
+        <attr name="item_chipCheckText" />
+        <attr name="item_chipClickable" />
+        <attr name="item_chipAllText" />
+        <attr name="item_chipType" />
+    </declare-styleable>
+
+    <declare-styleable name="InputAction">
+        <!-- 输入框 -->
+        <attr name="item_inputText" />
+        <attr name="item_inputHint" />
+        <attr name="item_inputColor" />
+        <attr name="item_inputSize" />
+        <attr name="item_inputMinWidth" />
+        <attr name="item_inputMaxWidth" />
+        <attr name="item_inputMinLines" />
+        <attr name="item_inputClickable" />
+        <attr name="item_inputSingleLine" />
+        <attr name="item_inputBackground" />
+        <attr name="android:inputType" />
+    </declare-styleable>
+
+
+    <declare-styleable name="BounceAction">
+        <attr name="BounceOrientation" />
+        <attr name="BounceResistance" />
+        <attr name="BounceDuration" />
+    </declare-styleable>
+
+    <declare-styleable name="BounceNestedScrollView">
+        <attr name="BounceOrientation" />
+        <attr name="BounceResistance" />
+        <attr name="BounceDuration" />
+    </declare-styleable>
+    <declare-styleable name="BounceFrameLayout">
+        <attr name="BounceOrientation" />
+        <attr name="BounceResistance" />
+        <attr name="BounceDuration" />
+    </declare-styleable>
+    <declare-styleable name="BounceRecyclerView">
+        <attr name="BounceOrientation" />
+        <attr name="BounceResistance" />
+        <attr name="BounceDuration" />
+    </declare-styleable>
+    <declare-styleable name="BounceViewPager2">
+        <attr name="BounceOrientation" />
+        <attr name="BounceResistance" />
+        <attr name="BounceDuration" />
+    </declare-styleable>
+
+    <declare-styleable name="BounceViewPager">
+        <attr name="BounceOrientation" />
+        <attr name="BounceResistance" />
+        <attr name="BounceDuration" />
+    </declare-styleable>
+
+    <!-- 常用正则类型 -->
+    <declare-styleable name="ScaleImageView">
+        <!-- 缩放比例 -->
+        <attr name="scaleRatio" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="RegexMethod">
+        <!-- 正则输入限制 -->
+        <attr name="inputRegex" />
+        <!-- 常用正则类型 -->
+        <attr name="regexType" />
+    </declare-styleable>
+    <declare-styleable name="RegexEditText">
+        <!-- 正则输入限制 -->
+        <attr name="inputRegex" />
+        <!-- 常用正则类型 -->
+        <attr name="regexType" />
+    </declare-styleable>
+    <declare-styleable name="RegexTextInputEditText">
+        <!-- 正则输入限制 -->
+        <attr name="inputRegex" />
+        <!-- 常用正则类型 -->
+        <attr name="regexType" />
+    </declare-styleable>
+
+    <!-- 进度条 -->
+    <declare-styleable name="ProgressView">
+        <attr name="progressIndeterminate" format="boolean" />
+        <attr name="barColor" format="color" />
+        <attr name="rimColor" format="color" />
+        <attr name="rimWidth" format="dimension" />
+        <attr name="spinSpeed" format="float" />
+        <attr name="barSpinCycleTime" format="integer" />
+        <attr name="circleRadius" format="dimension" />
+        <attr name="fillRadius" format="boolean" />
+        <attr name="barWidth" format="dimension" />
+        <attr name="linearProgress" format="boolean" />
+    </declare-styleable>
+
+
+    <attr name="x_separator" format="string" />
+    <attr name="x_disableClear" format="boolean" />
+    <attr name="x_clearDrawable" format="reference" />
+    <attr name="x_showPwdDrawable" format="reference" />
+    <attr name="x_hidePwdDrawable" format="reference" />
+    <attr name="x_disableEmoji" format="boolean" />
+    <attr name="x_togglePwdDrawableEnable" format="boolean" />
+    <attr name="x_pattern" format="string" />
+
+    <!-- 正则输入限制 -->
+    <declare-styleable name="XEditText">
+        <attr name="x_separator"/>
+        <attr name="x_disableClear" />
+        <attr name="x_clearDrawable" />
+        <attr name="x_showPwdDrawable"  />
+        <attr name="x_hidePwdDrawable"  />
+        <attr name="x_disableEmoji" />
+        <attr name="x_togglePwdDrawableEnable" />
+        <attr name="x_pattern"  />
+    </declare-styleable>
+
+    <!-- 正则输入限制 -->
+    <declare-styleable name="XTextInputEditText">
+        <attr name="x_separator"/>
+        <attr name="x_disableClear" />
+        <attr name="x_clearDrawable" />
+        <attr name="x_showPwdDrawable"  />
+        <attr name="x_hidePwdDrawable"  />
+        <attr name="x_disableEmoji" />
+        <attr name="x_togglePwdDrawableEnable" />
+        <attr name="x_pattern"  />
+    </declare-styleable>
+
+    <attr name="fillViewportH" format="boolean" />
+    <attr name="fillViewportV" format="boolean" />
+
+    <attr name="scrollOrientation">
+        <enum name="none" value="0" />
+        <enum name="horizontal" value="1" />
+        <enum name="vertical" value="2" />
+        <enum name="both" value="3" />
+    </attr>
+
+    <declare-styleable name="HVScrollView">
+        <attr name="fillViewportH"  />
+        <attr name="fillViewportV"  />
+        <attr name="scrollOrientation"/>
+        <attr name="childLayoutCenter" format="boolean" />
+    </declare-styleable>
+
+    <attr name="layout" format="reference" />
+    <attr name="inflatedId" format="reference" />
+
+    <!-- 自定义 ViewStub -->
+    <declare-styleable name="ViewGroupStub">
+        <!-- 布局 id -->
+        <attr name="layout" />
+    </declare-styleable>
+
+    <declare-styleable name="MsgView">
+        <!-- 圆角矩形背景色 -->
+        <attr name="cc_backgroundColor" format="color" />
+        <!-- 圆角弧度,单位dp-->
+        <attr name="cc_cornerRadius" format="dimension" />
+        <!-- 圆角弧度,单位dp-->
+        <attr name="cc_strokeWidth" format="dimension" />
+        <!-- 圆角边框颜色-->
+        <attr name="cc_strokeColor" format="color" />
+        <!-- 圆角弧度是高度一半-->
+        <attr name="cc_isRadiusHalfHeight" format="boolean" />
+        <!-- 圆角矩形宽高相等,取较宽高中大值-->
+        <attr name="cc_isWidthHeightEqual" format="boolean" />
+    </declare-styleable>
+</resources>

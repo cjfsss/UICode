@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="MaterialNoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorButtonRipple">@color/colorButtonRipple</item>
+        <item name="colorButtonPressed">@color/colorButtonPressed</item>
+        <item name="colorButtonDisable">@color/colorButtonDisable</item>
+        <item name="colorLine">@color/colorLine</item>
+        <item name="colorConfirm">@color/colorConfirm</item>
+        <item name="colorCancel">@color/colorCancel</item>
+    </style>
+
+    <style name="AppCompatNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorButtonRipple">@color/colorButtonRipple</item>
+        <item name="colorButtonPressed">@color/colorButtonPressed</item>
+        <item name="colorButtonDisable">@color/colorButtonDisable</item>
+        <item name="colorLine">@color/colorLine</item>
+        <item name="colorConfirm">@color/colorConfirm</item>
+        <item name="colorCancel">@color/colorCancel</item>
+    </style>
+
+    <style name="MaterialDialogBackgroundTransparent" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowNoTitle">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorButtonRipple">@color/colorButtonRipple</item>
+        <item name="colorButtonPressed">@color/colorButtonPressed</item>
+        <item name="colorButtonDisable">@color/colorButtonDisable</item>
+        <item name="colorLine">@color/colorLine</item>
+        <item name="colorConfirm">@color/colorConfirm</item>
+        <item name="colorCancel">@color/colorCancel</item>
+    </style>
+
+    <style name="AppCompatDialogBackgroundTransparent" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowNoTitle">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorButtonRipple">@color/colorButtonRipple</item>
+        <item name="colorButtonPressed">@color/colorButtonPressed</item>
+        <item name="colorButtonDisable">@color/colorButtonDisable</item>
+        <item name="colorLine">@color/colorLine</item>
+        <item name="colorConfirm">@color/colorConfirm</item>
+        <item name="colorCancel">@color/colorCancel</item>
+    </style>
+
+    <!-- 缩放动画 -->
+    <style name="ScaleAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/window_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/window_scale_out</item>
+    </style>
+
+    <!-- ios 动画 -->
+    <style name="IOSAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/window_ios_in</item>
+        <item name="android:windowExitAnimation">@anim/window_ios_out</item>
+    </style>
+
+    <!-- 顶部弹出动画 -->
+    <style name="TopAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/window_top_in</item>
+        <item name="android:windowExitAnimation">@anim/window_top_out</item>
+    </style>
+
+    <!-- 底部弹出动画 -->
+    <style name="BottomAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/window_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/window_bottom_out</item>
+    </style>
+
+    <!-- 左边弹出动画 -->
+    <style name="LeftAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/window_left_in</item>
+        <item name="android:windowExitAnimation">@anim/window_left_out</item>
+    </style>
+
+    <!-- 右边弹出动画 -->
+    <style name="RightAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/window_right_in</item>
+        <item name="android:windowExitAnimation">@anim/window_right_out</item>
+    </style>
+
+    <!-- 默认圆角按钮样式 -->
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:paddingStart" tools:ignore="NewApi">16dp</item>
+        <item name="android:paddingEnd" tools:ignore="NewApi">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_button</item>
+        <item name="android:foreground">@null</item>
+    </style>
+
+    <!-- 默认水平分割线样式 -->
+    <style name="HorizontalLineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line_size</item>
+        <item name="android:background">?attr/colorLine</item>
+    </style>
+
+    <!-- 默认垂直分割线样式 -->
+    <style name="VerticalLineStyle">
+        <item name="android:layout_width">@dimen/line_size</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">?attr/colorLine</item>
+    </style>
+
+    <!-- 获取验证码样式 -->
+    <style name="CountdownViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_countdown</item>
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:layout_marginEnd">15dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:minWidth">90dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/common_code_send</item>
+        <item name="android:textColor">@drawable/selector_countdown_color</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="WrapWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MatchWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextView22" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/sp_22</item>
+        <item name="android:textColor">@color/design_txt</item>
+    </style>
+
+    <style name="TextView20" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:textColor">@color/design_txt</item>
+    </style>
+
+    <style name="TextView18" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:textColor">@color/design_txt</item>
+    </style>
+
+    <style name="TextView16" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/design_txt</item>
+    </style>
+
+    <style name="TextView14" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/design_txt</item>
+    </style>
+
+    <style name="TextView12" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/design_txt</item>
+    </style>
+</resources>

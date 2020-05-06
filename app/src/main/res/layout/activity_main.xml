@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cjf.ui.bounce.BounceNestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:BounceOrientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <com.cjf.ui.item.TitleImageItem
+            android:layout_width="match_parent"
+            app:item_rightText="跳转到自带刷新界面"
+            app:item_rightIcon="@drawable/ic_chevron_right_black_24dp"
+            app:item_leftText="自带刷新"
+            android:onClick="startSwipeRecyclerViewActivity"
+            android:layout_height="wrap_content" />
+        <com.cjf.ui.item.TitleImageItem
+            android:layout_width="match_parent"
+            app:item_rightText="对话框"
+            app:item_rightIcon="@drawable/ic_chevron_right_black_24dp"
+            app:item_leftText="加载框"
+            android:onClick="onLoadingDialog"
+            android:layout_height="wrap_content" />
+        <com.cjf.ui.item.TitleImageItem
+            android:layout_width="match_parent"
+            app:item_rightText="对话框"
+            app:item_rightIcon="@drawable/ic_chevron_right_black_24dp"
+            app:item_leftText="提示框"
+            android:onClick="onMessageDialog"
+            android:layout_height="wrap_content" />
+        <com.cjf.ui.item.TitleImageItem
+            android:layout_width="match_parent"
+            app:item_rightText="对话框"
+            app:item_rightIcon="@drawable/ic_chevron_right_black_24dp"
+            app:item_leftText="选择框"
+            android:onClick="onChooseDialog"
+            android:layout_height="wrap_content" />
+        <com.cjf.ui.item.TitleImageItem
+            android:layout_width="match_parent"
+            app:item_rightText="对话框"
+            app:item_rightIcon="@drawable/ic_chevron_right_black_24dp"
+            app:item_leftText="选择描述框"
+            android:onClick="onChooseDescDialog"
+            android:layout_height="wrap_content" />
+        <com.cjf.ui.item.TitleImageItem
+            android:layout_width="match_parent"
+            app:item_rightText="对话框"
+            app:item_rightIcon="@drawable/ic_chevron_right_black_24dp"
+            app:item_leftText="选择描述框"
+            android:onClick="onViewDialog"
+            android:layout_height="wrap_content" />
+
+        <com.cjf.ui.text.ClearEditText
+            android:layout_marginTop="20dp"
+            android:hint="@string/register_password_hint2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.cjf.ui.text.PasswordEditText
+            android:hint="@string/login_hint_login_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.cjf.ui.text.XEditText
+            android:hint="@string/register_password_hint1"
+            app:x_togglePwdDrawableEnable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.cjf.ui.text.TextInputLayoutGo
+            app:boxBackgroundColor="@color/cardview_light_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.cjf.ui.text.ClearTextInputEditText
+                android:hint="@string/register_password_hint1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.cjf.ui.text.TextInputLayoutGo>
+        <com.cjf.ui.text.TextInputLayoutGo
+            app:boxBackgroundColor="@color/cardview_light_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.cjf.ui.text.PasswordTextInputEditText
+                android:hint="@string/register_password_hint2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.cjf.ui.text.TextInputLayoutGo>
+        <com.cjf.ui.text.TextInputLayoutGo
+            app:boxBackgroundColor="@color/cardview_light_background"
+            android:layout_marginTop="20dp"
+            app:passwordToggleEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.cjf.ui.text.XTextInputEditText
+                app:x_togglePwdDrawableEnable="true"
+                app:x_disableClear="false"
+                android:hint="@string/login_hint_login_name"
+                android:minHeight="?actionBarSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.cjf.ui.text.TextInputLayoutGo>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true"
+            android:id="@+id/textinputlayout_password"
+            android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:hint="请输入密码"
+            android:id="@+id/et_password"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.cjf.ui.item.TitleItem
+            android:layout_width="match_parent"
+            app:item_leftText="@string/app_name"
+            android:layout_height="wrap_content" />
+
+        <com.cjf.ui.item.TitleImageItem
+            android:layout_width="match_parent"
+            app:item_rightText="@string/crash_error_info"
+            app:item_rightIcon="@drawable/x_et_svg_ic_show_password_24dp"
+            app:item_leftText="@string/setting_question"
+            android:layout_height="wrap_content" />
+
+        <com.cjf.ui.item.TitleImageItem
+            android:layout_width="match_parent"
+            app:item_rightColor="@color/colorPrimary"
+            app:item_rightText="@string/crash_error_info"
+            app:item_rightIcon="@drawable/ic_chevron_right_black_24dp"
+            app:item_leftText="@string/setting_question"
+            android:layout_height="wrap_content" />
+
+        <com.cjf.ui.item.TitleImageItem
+            android:layout_width="match_parent"
+            app:item_rightIconColor="@color/design_grey900"
+            app:item_rightIcon="@drawable/ic_chevron_right_black_24dp"
+            app:item_leftText="@string/setting_question"
+            android:layout_height="wrap_content" />
+
+        <com.cjf.ui.item.SwitchItem
+            android:layout_width="match_parent"
+            app:item_leftText="@string/setting_help"
+            app:useMaterialThemeColors="false"
+            app:item_trackTint="@color/colorPrimary"
+            app:item_thumbTint="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+        <com.cjf.ui.item.SwitchSubtitleItem
+            android:layout_width="match_parent"
+            app:item_leftText="@string/setting_help"
+            app:item_leftSubtitleText="@string/update_install_package_manage"
+            app:useMaterialThemeColors="false"
+            app:item_trackTint="@color/colorPrimary"
+            app:item_thumbTint="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+        <com.cjf.ui.item.CheckBoxItem
+            android:layout_width="match_parent"
+            app:item_leftText="@string/setting_help"
+            app:useMaterialThemeColors="false"
+            app:item_buttonTint="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+        <com.cjf.ui.item.CheckBoxSubtitleItem
+            android:layout_width="match_parent"
+            app:item_leftText="@string/setting_help"
+            app:item_leftSubtitleText="@string/update_status_successful"
+            app:useMaterialThemeColors="false"
+            app:item_buttonTint="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+        <com.cjf.ui.item.SwitchItem
+            android:layout_width="match_parent"
+            app:useMaterialThemeColors="true"
+            app:item_leftText="@string/setting_help"
+            android:layout_height="wrap_content" />
+
+        <com.cjf.ui.item.CheckBoxItem
+            android:layout_width="match_parent"
+            app:useMaterialThemeColors="true"
+            app:item_leftText="@string/common_network"
+            android:layout_height="wrap_content" />
+
+        <com.cjf.ui.item.InputRightItem
+            android:layout_width="match_parent"
+            app:item_inputText="@string/crash_error_info"
+            app:item_leftText="@string/common_network"
+            android:layout_height="wrap_content" />
+
+        <com.cjf.ui.item.InputBottomItem
+            android:layout_width="match_parent"
+            app:item_inputText="@string/password_reset_title"
+            app:item_leftText="@string/password_reset_title"
+            android:layout_height="wrap_content" />
+
+        <com.cjf.ui.item.ChipRightItem
+            android:layout_width="match_parent"
+            app:item_leftText="@string/login_hint_login_name"
+            app:item_chipAllText="@array/yesOrNo"
+            app:item_chipType="single"
+            android:layout_height="wrap_content" />
+
+        <com.cjf.ui.item.ChipBottomItem
+            android:layout_width="match_parent"
+            app:item_leftText="@string/setting_about"
+            app:item_checked="true"
+            app:item_chipAllText="@array/checkMore"
+            app:item_chipType="more"
+            android:layout_height="wrap_content" />
+
+        <com.cjf.ui.item.SubtitleItem
+            android:layout_width="match_parent"
+            app:item_leftText="@string/setting_help"
+            app:item_leftSubtitleText="@string/update_permission_hint"
+            android:layout_height="wrap_content" />
+
+        <com.cjf.ui.item.SubtitleImageItem
+            android:layout_width="match_parent"
+            app:item_rightText="@string/setting_exit"
+            app:item_rightIcon="@drawable/x_et_svg_ic_clear_24dp"
+            app:item_leftSubtitleText="@string/setting_title"
+            app:item_leftText="@string/update_status_running"
+            android:layout_height="wrap_content" />
+        <com.cjf.ui.item.SwitchSubtitleItem
+            android:layout_width="match_parent"
+            app:useMaterialThemeColors="true"
+            app:item_checked="true"
+            app:item_leftSubtitleText="@string/update_status_successful"
+            app:item_leftText="@string/update_title"
+            android:layout_height="wrap_content" />
+        <com.cjf.ui.item.CheckBoxSubtitleItem
+            android:layout_width="match_parent"
+            app:item_leftSubtitleText="@string/update_status_successful"
+            app:item_leftText="@string/update_title"
+            android:layout_height="wrap_content" />
+
+
+        <com.cjf.ui.item.InputRightSubtitleItem
+            android:layout_width="match_parent"
+            app:item_inputText="@string/crash_error_info"
+            app:item_leftText="@string/common_network"
+            app:item_leftSubtitleText="@string/update_status_successful"
+            android:layout_height="wrap_content" />
+
+        <com.cjf.ui.item.InputBottomSubtitleItem
+            android:layout_width="match_parent"
+            app:item_inputText="@string/password_reset_title"
+            app:item_leftText="@string/password_reset_title"
+            app:item_leftSubtitleText="@string/update_status_successful"
+            android:layout_height="wrap_content" />
+
+        <com.cjf.ui.item.ChipBottomSubtitleItem
+            android:layout_width="match_parent"
+            app:item_leftText="@string/password_reset_title"
+            app:item_chipAllText="@array/checkMore"
+            app:item_chipType="more"
+            app:item_leftSubtitleText="@string/update_title"
+            android:layout_height="wrap_content" />
+        <com.cjf.ui.item.ChipBottomSubtitleItem
+            android:layout_width="match_parent"
+            app:item_trackTint="@color/design_grey800"
+            app:item_thumbTint="@color/design_grey800"
+            app:useMaterialThemeColors="false"
+            app:item_leftText="@string/password_reset_title"
+            app:item_chipAllText="@array/checkMore"
+            app:item_chipType="more"
+            app:item_leftSubtitleText="@string/update_title"
+            android:layout_height="wrap_content" />
+
+        <com.cjf.ui.item.ChipRightSubtitleItem
+            android:layout_width="match_parent"
+            app:item_leftText="@string/login_hint_login_name"
+            app:item_leftSubtitleText="@string/update_title"
+            app:item_chipAllText="@array/yesOrNo"
+            app:item_chipType="single"
+            android:layout_height="wrap_content" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:text="跳转到dialog"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        style="@style/ButtonStyle"
+        android:layout_height="wrap_content" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.cjf.ui.bounce.BounceNestedScrollView>
