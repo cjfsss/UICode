@@ -349,4 +349,504 @@
         <!-- 圆角矩形宽高相等,取较宽高中大值-->
         <attr name="cc_isWidthHeightEqual" format="boolean" />
     </declare-styleable>
+
+    <declare-styleable name="TitleImageItem">
+        <!-- 左边 -->
+        <attr name="item_leftText" />
+        <attr name="item_leftHint" />
+        <attr name="item_leftIcon" />
+        <attr name="item_leftIconColor" />
+        <attr name="item_leftColor" />
+        <attr name="item_leftSize" />
+
+        <!-- 左边 -->
+        <attr name="item_mustVisibility" />
+        <attr name="item_mustText" />
+        <attr name="item_mustColor" />
+        <attr name="item_mustSize" />
+        <!-- 分割线 -->
+        <attr name="item_lineVisible" />
+        <attr name="item_lineColor" />
+        <attr name="item_lineSize" />
+        <attr name="item_lineMargin" />
+
+        <attr name="item_rightText" />
+        <attr name="item_rightHint" />
+        <attr name="item_rightIcon" />
+        <attr name="item_rightIconColor" />
+        <attr name="item_rightColor" />
+        <attr name="item_rightSize" />
+    </declare-styleable>
+
+    <declare-styleable name="TitleItem" >
+        <!-- 左边 -->
+        <attr name="item_leftText" />
+        <attr name="item_leftHint" />
+        <attr name="item_leftIcon" />
+        <attr name="item_leftIconColor" />
+        <attr name="item_leftColor" />
+        <attr name="item_leftSize" />
+
+        <!-- 左边 -->
+        <attr name="item_mustVisibility" />
+        <attr name="item_mustText" />
+        <attr name="item_mustColor" />
+        <attr name="item_mustSize" />
+        <!-- 分割线 -->
+        <attr name="item_lineVisible" />
+        <attr name="item_lineColor" />
+        <attr name="item_lineSize" />
+        <attr name="item_lineMargin" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchSubtitleItem" >
+        <!-- 左边 -->
+        <attr name="item_leftText" />
+        <attr name="item_leftHint" />
+        <attr name="item_leftIcon" />
+        <attr name="item_leftIconColor" />
+        <attr name="item_leftColor" />
+        <attr name="item_leftSize" />
+
+        <!-- 左边 -->
+        <attr name="item_mustVisibility" />
+        <attr name="item_mustText" />
+        <attr name="item_mustColor" />
+        <attr name="item_mustSize" />
+        <!-- 分割线 -->
+        <attr name="item_lineVisible" />
+        <attr name="item_lineColor" />
+        <attr name="item_lineSize" />
+        <attr name="item_lineMargin" />
+
+        <!-- 左边 -->
+        <attr name="item_leftSubtitleText" />
+        <attr name="item_leftSubtitleColor" />
+        <attr name="item_leftSubtitleSize" />
+
+        <attr name="item_checked" />
+        <attr name="item_clickable" />
+        <attr name="item_trackTint" />
+        <attr name="item_thumbTint" />
+        <attr name="item_buttonTint" />
+        <attr name="useMaterialThemeColors" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchItem" >
+        <!-- 左边 -->
+        <attr name="item_leftText" />
+        <attr name="item_leftHint" />
+        <attr name="item_leftIcon" />
+        <attr name="item_leftIconColor" />
+        <attr name="item_leftColor" />
+        <attr name="item_leftSize" />
+
+        <!-- 左边 -->
+        <attr name="item_mustVisibility" />
+        <attr name="item_mustText" />
+        <attr name="item_mustColor" />
+        <attr name="item_mustSize" />
+        <!-- 分割线 -->
+        <attr name="item_lineVisible" />
+        <attr name="item_lineColor" />
+        <attr name="item_lineSize" />
+        <attr name="item_lineMargin" />
+
+        <attr name="item_checked" />
+        <attr name="item_clickable" />
+        <attr name="item_trackTint" />
+        <attr name="item_thumbTint" />
+        <attr name="item_buttonTint" />
+        <attr name="useMaterialThemeColors" />
+    </declare-styleable>
+
+    <declare-styleable name="SubtitleItem" >
+        <!-- 左边 -->
+        <attr name="item_leftText" />
+        <attr name="item_leftHint" />
+        <attr name="item_leftIcon" />
+        <attr name="item_leftIconColor" />
+        <attr name="item_leftColor" />
+        <attr name="item_leftSize" />
+
+        <!-- 左边 -->
+        <attr name="item_mustVisibility" />
+        <attr name="item_mustText" />
+        <attr name="item_mustColor" />
+        <attr name="item_mustSize" />
+        <!-- 分割线 -->
+        <attr name="item_lineVisible" />
+        <attr name="item_lineColor" />
+        <attr name="item_lineSize" />
+        <attr name="item_lineMargin" />
+
+        <!-- 左边 -->
+        <attr name="item_leftSubtitleText" />
+        <attr name="item_leftSubtitleColor" />
+        <attr name="item_leftSubtitleSize" />
+    </declare-styleable>
+
+    <declare-styleable name="SubtitleImageItem" >
+        <!-- 左边 -->
+        <attr name="item_leftText" />
+        <attr name="item_leftHint" />
+        <attr name="item_leftIcon" />
+        <attr name="item_leftIconColor" />
+        <attr name="item_leftColor" />
+        <attr name="item_leftSize" />
+
+        <!-- 左边 -->
+        <attr name="item_mustVisibility" />
+        <attr name="item_mustText" />
+        <attr name="item_mustColor" />
+        <attr name="item_mustSize" />
+        <!-- 分割线 -->
+        <attr name="item_lineVisible" />
+        <attr name="item_lineColor" />
+        <attr name="item_lineSize" />
+        <attr name="item_lineMargin" />
+
+        <!-- 左边 -->
+        <attr name="item_leftSubtitleText" />
+        <attr name="item_leftSubtitleColor" />
+        <attr name="item_leftSubtitleSize" />
+
+        <attr name="item_rightText" />
+        <attr name="item_rightHint" />
+        <attr name="item_rightIcon" />
+        <attr name="item_rightIconColor" />
+        <attr name="item_rightColor" />
+        <attr name="item_rightSize" />
+    </declare-styleable>
+
+    <declare-styleable name="InputRightSubtitleItem" >
+        <!-- 左边 -->
+        <attr name="item_leftText" />
+        <attr name="item_leftHint" />
+        <attr name="item_leftIcon" />
+        <attr name="item_leftIconColor" />
+        <attr name="item_leftColor" />
+        <attr name="item_leftSize" />
+
+        <!-- 左边 -->
+        <attr name="item_mustVisibility" />
+        <attr name="item_mustText" />
+        <attr name="item_mustColor" />
+        <attr name="item_mustSize" />
+        <!-- 分割线 -->
+        <attr name="item_lineVisible" />
+        <attr name="item_lineColor" />
+        <attr name="item_lineSize" />
+        <attr name="item_lineMargin" />
+
+        <!-- 左边 -->
+        <attr name="item_leftSubtitleText" />
+        <attr name="item_leftSubtitleColor" />
+        <attr name="item_leftSubtitleSize" />
+
+        <!-- 输入框 -->
+        <attr name="item_inputText" />
+        <attr name="item_inputHint" />
+        <attr name="item_inputColor" />
+        <attr name="item_inputSize" />
+        <attr name="item_inputMinWidth" />
+        <attr name="item_inputMaxWidth" />
+        <attr name="item_inputMinLines" />
+        <attr name="item_inputClickable" />
+        <attr name="item_inputSingleLine" />
+        <attr name="item_inputBackground" />
+        <attr name="android:inputType" />
+    </declare-styleable>
+
+    <declare-styleable name="InputRightItem" >
+        <!-- 左边 -->
+        <attr name="item_leftText" />
+        <attr name="item_leftHint" />
+        <attr name="item_leftIcon" />
+        <attr name="item_leftIconColor" />
+        <attr name="item_leftColor" />
+        <attr name="item_leftSize" />
+
+        <!-- 左边 -->
+        <attr name="item_mustVisibility" />
+        <attr name="item_mustText" />
+        <attr name="item_mustColor" />
+        <attr name="item_mustSize" />
+        <!-- 分割线 -->
+        <attr name="item_lineVisible" />
+        <attr name="item_lineColor" />
+        <attr name="item_lineSize" />
+        <attr name="item_lineMargin" />
+
+        <!-- 输入框 -->
+        <attr name="item_inputText" />
+        <attr name="item_inputHint" />
+        <attr name="item_inputColor" />
+        <attr name="item_inputSize" />
+        <attr name="item_inputMinWidth" />
+        <attr name="item_inputMaxWidth" />
+        <attr name="item_inputMinLines" />
+        <attr name="item_inputClickable" />
+        <attr name="item_inputSingleLine" />
+        <attr name="item_inputBackground" />
+        <attr name="android:inputType" />
+    </declare-styleable>
+
+    <declare-styleable name="InputBottomSubtitleItem" >
+        <!-- 左边 -->
+        <attr name="item_leftText" />
+        <attr name="item_leftHint" />
+        <attr name="item_leftIcon" />
+        <attr name="item_leftIconColor" />
+        <attr name="item_leftColor" />
+        <attr name="item_leftSize" />
+
+        <!-- 左边 -->
+        <attr name="item_mustVisibility" />
+        <attr name="item_mustText" />
+        <attr name="item_mustColor" />
+        <attr name="item_mustSize" />
+        <!-- 分割线 -->
+        <attr name="item_lineVisible" />
+        <attr name="item_lineColor" />
+        <attr name="item_lineSize" />
+        <attr name="item_lineMargin" />
+
+        <!-- 左边 -->
+        <attr name="item_leftSubtitleText" />
+        <attr name="item_leftSubtitleColor" />
+        <attr name="item_leftSubtitleSize" />
+
+        <!-- 输入框 -->
+        <attr name="item_inputText" />
+        <attr name="item_inputHint" />
+        <attr name="item_inputColor" />
+        <attr name="item_inputSize" />
+        <attr name="item_inputMinWidth" />
+        <attr name="item_inputMaxWidth" />
+        <attr name="item_inputMinLines" />
+        <attr name="item_inputClickable" />
+        <attr name="item_inputSingleLine" />
+        <attr name="item_inputBackground" />
+        <attr name="android:inputType" />
+    </declare-styleable>
+
+    <declare-styleable name="InputBottomItem" >
+        <!-- 左边 -->
+        <attr name="item_leftText" />
+        <attr name="item_leftHint" />
+        <attr name="item_leftIcon" />
+        <attr name="item_leftIconColor" />
+        <attr name="item_leftColor" />
+        <attr name="item_leftSize" />
+
+        <!-- 左边 -->
+        <attr name="item_mustVisibility" />
+        <attr name="item_mustText" />
+        <attr name="item_mustColor" />
+        <attr name="item_mustSize" />
+        <!-- 分割线 -->
+        <attr name="item_lineVisible" />
+        <attr name="item_lineColor" />
+        <attr name="item_lineSize" />
+        <attr name="item_lineMargin" />
+
+        <!-- 输入框 -->
+        <attr name="item_inputText" />
+        <attr name="item_inputHint" />
+        <attr name="item_inputColor" />
+        <attr name="item_inputSize" />
+        <attr name="item_inputMinWidth" />
+        <attr name="item_inputMaxWidth" />
+        <attr name="item_inputMinLines" />
+        <attr name="item_inputClickable" />
+        <attr name="item_inputSingleLine" />
+        <attr name="item_inputBackground" />
+        <attr name="android:inputType" />
+    </declare-styleable>
+
+    <declare-styleable name="ChipRightSubtitleItem" >
+        <!-- 左边 -->
+        <attr name="item_leftText" />
+        <attr name="item_leftHint" />
+        <attr name="item_leftIcon" />
+        <attr name="item_leftIconColor" />
+        <attr name="item_leftColor" />
+        <attr name="item_leftSize" />
+
+        <!-- 左边 -->
+        <attr name="item_mustVisibility" />
+        <attr name="item_mustText" />
+        <attr name="item_mustColor" />
+        <attr name="item_mustSize" />
+        <!-- 分割线 -->
+        <attr name="item_lineVisible" />
+        <attr name="item_lineColor" />
+        <attr name="item_lineSize" />
+        <attr name="item_lineMargin" />
+        <!-- 左边 -->
+        <attr name="item_leftSubtitleText" />
+        <attr name="item_leftSubtitleColor" />
+        <attr name="item_leftSubtitleSize" />
+
+        <!-- 右边 -->
+        <attr name="item_chipCheckText" />
+        <attr name="item_chipClickable" />
+        <attr name="item_chipAllText" />
+        <attr name="item_chipType" />
+    </declare-styleable>
+
+    <declare-styleable name="ChipRightItem" >
+        <!-- 左边 -->
+        <attr name="item_leftText" />
+        <attr name="item_leftHint" />
+        <attr name="item_leftIcon" />
+        <attr name="item_leftIconColor" />
+        <attr name="item_leftColor" />
+        <attr name="item_leftSize" />
+
+        <!-- 左边 -->
+        <attr name="item_mustVisibility" />
+        <attr name="item_mustText" />
+        <attr name="item_mustColor" />
+        <attr name="item_mustSize" />
+        <!-- 分割线 -->
+        <attr name="item_lineVisible" />
+        <attr name="item_lineColor" />
+        <attr name="item_lineSize" />
+        <attr name="item_lineMargin" />
+
+        <!-- 右边 -->
+        <attr name="item_chipCheckText" />
+        <attr name="item_chipClickable" />
+        <attr name="item_chipAllText" />
+        <attr name="item_chipType" />
+    </declare-styleable>
+
+    <declare-styleable name="ChipBottomSubtitleItem" >
+        <!-- 左边 -->
+        <attr name="item_leftText" />
+        <attr name="item_leftHint" />
+        <attr name="item_leftIcon" />
+        <attr name="item_leftIconColor" />
+        <attr name="item_leftColor" />
+        <attr name="item_leftSize" />
+
+        <!-- 左边 -->
+        <attr name="item_mustVisibility" />
+        <attr name="item_mustText" />
+        <attr name="item_mustColor" />
+        <attr name="item_mustSize" />
+        <!-- 分割线 -->
+        <attr name="item_lineVisible" />
+        <attr name="item_lineColor" />
+        <attr name="item_lineSize" />
+        <attr name="item_lineMargin" />
+
+        <!-- 左边 -->
+        <attr name="item_leftSubtitleText" />
+        <attr name="item_leftSubtitleColor" />
+        <attr name="item_leftSubtitleSize" />
+
+        <!-- 右边 -->
+        <attr name="item_chipCheckText" />
+        <attr name="item_chipClickable" />
+        <attr name="item_chipAllText" />
+        <attr name="item_chipType" />
+    </declare-styleable>
+
+    <declare-styleable name="ChipBottomItem" >
+        <!-- 左边 -->
+        <attr name="item_leftText" />
+        <attr name="item_leftHint" />
+        <attr name="item_leftIcon" />
+        <attr name="item_leftIconColor" />
+        <attr name="item_leftColor" />
+        <attr name="item_leftSize" />
+
+        <!-- 左边 -->
+        <attr name="item_mustVisibility" />
+        <attr name="item_mustText" />
+        <attr name="item_mustColor" />
+        <attr name="item_mustSize" />
+        <!-- 分割线 -->
+        <attr name="item_lineVisible" />
+        <attr name="item_lineColor" />
+        <attr name="item_lineSize" />
+        <attr name="item_lineMargin" />
+
+        <!-- 右边 -->
+        <attr name="item_chipCheckText" />
+        <attr name="item_chipClickable" />
+        <attr name="item_chipAllText" />
+        <attr name="item_chipType" />
+
+        <attr name="item_checked" />
+        <attr name="item_clickable" />
+        <attr name="item_trackTint" />
+        <attr name="item_thumbTint" />
+        <attr name="item_buttonTint" />
+        <attr name="useMaterialThemeColors" />
+    </declare-styleable>
+
+    <declare-styleable name="CheckBoxSubtitleItem" >
+        <!-- 左边 -->
+        <attr name="item_leftText" />
+        <attr name="item_leftHint" />
+        <attr name="item_leftIcon" />
+        <attr name="item_leftIconColor" />
+        <attr name="item_leftColor" />
+        <attr name="item_leftSize" />
+
+        <!-- 左边 -->
+        <attr name="item_mustVisibility" />
+        <attr name="item_mustText" />
+        <attr name="item_mustColor" />
+        <attr name="item_mustSize" />
+        <!-- 分割线 -->
+        <attr name="item_lineVisible" />
+        <attr name="item_lineColor" />
+        <attr name="item_lineSize" />
+        <attr name="item_lineMargin" />
+
+        <!-- 左边 -->
+        <attr name="item_leftSubtitleText" />
+        <attr name="item_leftSubtitleColor" />
+        <attr name="item_leftSubtitleSize" />
+
+        <attr name="item_checked" />
+        <attr name="item_clickable" />
+        <attr name="item_trackTint" />
+        <attr name="item_thumbTint" />
+        <attr name="item_buttonTint" />
+        <attr name="useMaterialThemeColors" />
+    </declare-styleable>
+
+    <declare-styleable name="CheckBoxItem" >
+        <!-- 左边 -->
+        <attr name="item_leftText" />
+        <attr name="item_leftHint" />
+        <attr name="item_leftIcon" />
+        <attr name="item_leftIconColor" />
+        <attr name="item_leftColor" />
+        <attr name="item_leftSize" />
+
+        <!-- 左边 -->
+        <attr name="item_mustVisibility" />
+        <attr name="item_mustText" />
+        <attr name="item_mustColor" />
+        <attr name="item_mustSize" />
+        <!-- 分割线 -->
+        <attr name="item_lineVisible" />
+        <attr name="item_lineColor" />
+        <attr name="item_lineSize" />
+        <attr name="item_lineMargin" />
+
+        <attr name="item_checked" />
+        <attr name="item_clickable" />
+        <attr name="item_trackTint" />
+        <attr name="item_thumbTint" />
+        <attr name="item_buttonTint" />
+        <attr name="useMaterialThemeColors" />
+    </declare-styleable>
 </resources>

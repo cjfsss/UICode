@@ -21,7 +21,8 @@ import androidx.appcompat.widget.LinearLayoutCompat;
  * @date : 2020/4/1 18:44
  */
 @SuppressWarnings("unchecked")
-public abstract class SubtitleGroupItem<T extends ItemGroupView<T>> extends ItemGroupView<T> implements LeftSubtitleAction<T> {
+public abstract class SubtitleGroupItem<T extends ItemGroupView<T>> extends ItemGroupView<T>
+        implements LeftSubtitleAction<T> {
 
     private LinearLayoutCompat mSubtitleLinearLayout;
     private AppCompatTextView mSubtitleView;

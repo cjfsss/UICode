@@ -20,7 +20,8 @@ import androidx.appcompat.widget.LinearLayoutCompat;
  * @version : 1.0
  * @date : 2020/4/1 18:44
  */
-public abstract class CompoundSubtitleItem<T extends SubtitleGroupItem<T>> extends SubtitleGroupItem<T> implements CompoundAction<T> {
+public abstract class CompoundSubtitleItem<T extends SubtitleGroupItem<T>> extends SubtitleGroupItem<T>
+        implements CompoundAction<T> {
 
     private View mSpaceView;
     private OnCheckedChangeListener mOnCheckedChangeListener;
