@@ -32,7 +32,7 @@ public class SwipeRecyclerViewActivity extends AppCompatActivity implements OnRe
     private SwipeRefreshPagerLayout mSwipeRefreshPagerLayout;
     private BounceRecyclerView mRecyclerView;
     private int mCount = 10;
-    private SingleCompoundAdapter mSwipeAdapter;
+    private DefaultSingleCheckBoxAdapter mSwipeAdapter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

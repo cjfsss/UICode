@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 
 import com.cjf.ui.R;
 import com.cjf.ui.base.ContextAction;
+import com.cjf.ui.life.OnLifecycle;
 
 import androidx.appcompat.widget.LinearLayoutCompat;
 
@@ -21,7 +22,7 @@ import androidx.appcompat.widget.LinearLayoutCompat;
  * @version : 1.0
  * @date : 2020/4/9 17:44
  */
-public interface BounceAction extends ContextAction,Bounce {
+public interface BounceAction extends ContextAction, Bounce, OnLifecycle {
 
     BounceDelegate getBounceDelegate();
 
@@ -57,7 +58,7 @@ public interface BounceAction extends ContextAction,Bounce {
         getBounceDelegate().setOnBounceDistanceChangeListener(onBounceDistanceChangeListener);
     }
 
-    default void setBounceType(int bounceType){
+    default void setBounceType(int bounceType) {
         getBounceDelegate().setBounceType(bounceType);
     }
 

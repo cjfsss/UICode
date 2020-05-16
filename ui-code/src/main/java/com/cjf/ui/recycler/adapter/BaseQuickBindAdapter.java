@@ -31,10 +31,6 @@ public abstract class BaseQuickBindAdapter<T, VH extends BaseViewHolder> extends
         return getDefItemCount();
     }
 
-    @Override
-    protected VH onCreateDefViewHolder(ViewGroup parent, int viewType) {
-        return super.createBaseViewHolder(getView(parent, viewType));
-    }
 
     protected abstract View getView(ViewGroup parent, int viewType);
 

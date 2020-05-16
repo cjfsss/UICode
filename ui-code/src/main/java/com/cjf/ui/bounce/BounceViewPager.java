@@ -6,6 +6,7 @@ import android.view.MotionEvent;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.lifecycle.LifecycleOwner;
 import androidx.viewpager.widget.ViewPager;
 
 /**
@@ -52,19 +53,13 @@ public class BounceViewPager extends ViewPager implements BounceAction {
     }
 
     @Override
-    public void onAttachedToWindow() {
-        super.onAttachedToWindow();
-    }
-
-    @Override
-    protected void onDetachedFromWindow() {
-        super.onDetachedFromWindow();
-        mBounceDelegate.onDetachedFromWindow(this);
-    }
-
-    @Override
     public BounceDelegate getBounceDelegate() {
         return mBounceDelegate;
     }
 
+    @Override
+    public void onDestroy(LifecycleOwner owner) {
+        mBounceDelegate.onDestroy(owner);
+        owner.getLifecycle().removeObserver(this);
+    }
 }

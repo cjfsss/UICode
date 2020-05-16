@@ -3,13 +3,14 @@ package com.cjf.ui.bounce;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
-import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.Interpolator;
 import android.widget.LinearLayout;
 
-import com.cjf.ui.base.OnLifeWindow;
+import com.cjf.ui.life.OnLifecycle;
+
+import androidx.lifecycle.LifecycleOwner;
 
 /**
  * <p>Title: BounceDelegate </p>
@@ -20,7 +21,7 @@ import com.cjf.ui.base.OnLifeWindow;
  * @version : 1.0
  * @date : 2020/4/9 17:48
  */
-public class BounceDelegate implements OnLifeWindow<ViewGroup> {
+public class BounceDelegate implements OnLifecycle {
 
     public static final int BOUNCE_TYPE_BOTH = 0;
     // 只有上面面回弹
@@ -273,12 +274,7 @@ public class BounceDelegate implements OnLifeWindow<ViewGroup> {
     }
 
     @Override
-    public void onAttachedToWindow(ViewGroup view) {
-
-    }
-
-    @Override
-    public void onDetachedFromWindow(ViewGroup view) {
+    public void onDestroy(LifecycleOwner owner) {
         mInterpolator = null;
         mTargetView = null;
         mOnBounceDistanceChangeListener = null;

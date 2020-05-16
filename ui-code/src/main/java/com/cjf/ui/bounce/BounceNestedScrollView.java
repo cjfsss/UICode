@@ -7,6 +7,7 @@ import android.view.MotionEvent;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.widget.NestedScrollView;
+import androidx.lifecycle.LifecycleOwner;
 
 /**
  * <p>Title: ElasticNestedScrollView </p>
@@ -52,19 +53,13 @@ public class BounceNestedScrollView extends NestedScrollView implements BounceAc
     }
 
     @Override
-    public void onAttachedToWindow() {
-        super.onAttachedToWindow();
-    }
-
-    @Override
-    protected void onDetachedFromWindow() {
-        super.onDetachedFromWindow();
-        mBounceDelegate.onDetachedFromWindow(this);
-    }
-
-    @Override
     public BounceDelegate getBounceDelegate() {
         return mBounceDelegate;
     }
 
+    @Override
+    public void onDestroy(LifecycleOwner owner) {
+        mBounceDelegate.onDestroy(owner);
+        owner.getLifecycle().removeObserver(this);
+    }
 }

@@ -8,6 +8,7 @@ import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.LinearLayoutCompat;
+import androidx.lifecycle.LifecycleOwner;
 
 /**
  * <p>Title: BounceRelativeLayout </p>
@@ -62,18 +63,13 @@ public class BounceRelativeLayout extends RelativeLayout implements BounceAction
     }
 
     @Override
-    public void onAttachedToWindow() {
-        super.onAttachedToWindow();
-    }
-
-    @Override
-    protected void onDetachedFromWindow() {
-        super.onDetachedFromWindow();
-        mBounceDelegate.onDetachedFromWindow(this);
-    }
-
-    @Override
     public BounceDelegate getBounceDelegate() {
         return mBounceDelegate;
+    }
+
+    @Override
+    public void onDestroy(LifecycleOwner owner) {
+        mBounceDelegate.onDestroy(owner);
+        owner.getLifecycle().removeObserver(this);
     }
 }

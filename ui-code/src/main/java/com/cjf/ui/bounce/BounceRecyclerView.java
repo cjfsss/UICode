@@ -6,6 +6,7 @@ import android.view.MotionEvent;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.lifecycle.LifecycleOwner;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -54,18 +55,6 @@ public class BounceRecyclerView extends RecyclerView implements BounceAction {
     }
 
     @Override
-    public void onAttachedToWindow() {
-        super.onAttachedToWindow();
-        mBounceDelegate.onAttachedToWindow(this);
-    }
-
-    @Override
-    protected void onDetachedFromWindow() {
-        super.onDetachedFromWindow();
-        mBounceDelegate.onDetachedFromWindow(this);
-    }
-
-    @Override
     public BounceDelegate getBounceDelegate() {
         return mBounceDelegate;
     }
@@ -82,4 +71,9 @@ public class BounceRecyclerView extends RecyclerView implements BounceAction {
         setAdapter(adapter);
     }
 
+    @Override
+    public void onDestroy(LifecycleOwner owner) {
+        mBounceDelegate.onDestroy(owner);
+        owner.getLifecycle().removeObserver(this);
+    }
 }

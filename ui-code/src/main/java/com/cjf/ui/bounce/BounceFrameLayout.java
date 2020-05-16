@@ -7,6 +7,7 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.lifecycle.LifecycleOwner;
 
 /**
  * <p>Title: ElasticNestedScrollView </p>
@@ -62,19 +63,13 @@ public class BounceFrameLayout extends FrameLayout implements BounceAction {
     }
 
     @Override
-    public void onAttachedToWindow() {
-        super.onAttachedToWindow();
-    }
-
-    @Override
-    protected void onDetachedFromWindow() {
-        super.onDetachedFromWindow();
-        mBounceDelegate.onDetachedFromWindow(this);
-    }
-
-    @Override
     public BounceDelegate getBounceDelegate() {
         return mBounceDelegate;
     }
 
+    @Override
+    public void onDestroy(LifecycleOwner owner) {
+        mBounceDelegate.onDestroy(owner);
+        owner.getLifecycle().removeObserver(this);
+    }
 }
